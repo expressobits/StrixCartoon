@@ -1,0 +1,16 @@
+{
+    "name": "br.com.expressobits.strixcartoon",
+    "displayName": "Strix Cartoon",
+    "version": "0.0.2",
+    "unity": "2019.3",
+    "description": "Cartoon shader",
+    "keywords": [
+        "post processing",
+        "unity",
+        "rendering"
+    ],
+    "category": "Unity",
+    "dependencies": {
+        "com.unity.render-pipelines.universal": "7.1.8"
+    }
+}
