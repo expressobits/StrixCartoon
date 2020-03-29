@@ -1,0 +1,25 @@
+{
+    "name": "StrixCartoon",
+    "references": [
+        "GUID:c579267770062bf448e75eb160330b7f",
+        "GUID:36d514892e55d4340b470c29fcab8b44",
+        "GUID:15fc0a57446b3144c949da3e2b9737a9",
+        "GUID:bc3b0daec27db604caf7fec37e54bf6d",
+        "GUID:ab67fb10353d84448ac887a7367cbda8",
+        "GUID:b4517ec124862cb4bb3b8b27d72843a6",
+        "GUID:3eae0364be2026648bf74846acb8a731",
+        "GUID:6e5480588ffa37d4f82fe96c45e8ce9c",
+        "GUID:df380645f10b7bc4b97d4f5eb6303d95",
+        "GUID:bf043f86dbf1bda4398ec83eebe40b8c",
+        "GUID:46a67ded66a63de48b9329c593fc08de"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
