@@ -29,8 +29,8 @@ These shaders are a compilation of the best shaders for maximum URP compatibilit
 * Github: [@ColinLeung-NiloCat](https://github.com/ColinLeung-NiloCat)
 Light manager: https://github.com/ColinLeung-NiloCat/UnityURPToonLitShaderExample
 
-👤 **Daniel ilett**
-* Github: [@daniel-ilett](https://alexanderameye.github.io/index.html)
+👤 **Alexander Ameye**
+* Github: [@AlexanderAmeye](https://github.com/AlexanderAmeye)
 Outline Rendering Feature: https://alexanderameye.github.io/outlineshader.html
 
 ***
