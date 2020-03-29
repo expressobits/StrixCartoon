@@ -22,9 +22,14 @@ Simply add a post processing profile as an asset, and when editing in the add ef
 ## Authors
 
 👤 **Rafael Correa**
-
+(Script)
 * Twitter: [@ScriptsEngineer](https://twitter.com/ScriptsEngineer)
 * Github: [@scriptsengineer](https://github.com/scriptsengineer)
+
+👤 **Gabriel Correa**
+(Textures)
+* Twitter: [@GMCFromHell](https://twitter.com/GMCFromHell)
+* Github: [@GMCFromHell](https://github.com/GMCFromHell)
 
 ## 🤝 Contributing
 
