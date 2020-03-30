@@ -22,7 +22,7 @@ Material:
     m_TexEnvs:
     - _BaseMap:
         m_Texture: {fileID: 2800000, guid: ce2c9ac807d0d0e4eaebfcd304726bb5, type: 3}
-        m_Scale: {x: 2, y: 2}
+        m_Scale: {x: 4, y: 4}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
         m_Texture: {fileID: 2800000, guid: 97c5106631981ce4c97a307c19692d99, type: 3}
@@ -49,7 +49,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ToonRamp:
-        m_Texture: {fileID: 2800000, guid: 76cd690da26c8314ba0bf6a41199cac7, type: 3}
+        m_Texture: {fileID: 2800000, guid: 616d3d5040137714e92431ee79ff1ee5, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
