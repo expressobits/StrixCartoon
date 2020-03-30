@@ -6,7 +6,7 @@
 
 > Strix Cartoon - package that adds several post processing effects that can save you the time to add that final charm to your game. For fun!
 
-[Example](https://github.com/ExpressoBits/StrixCartoon/blob/master/Example.png)
+![Example](https://github.com/ExpressoBits/StrixCartoon/wiki/images/Example.png)
 
 ### 🏠 [Homepage](www.expressobits.com.br/strix-cartoon)
 
