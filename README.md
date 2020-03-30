@@ -21,9 +21,11 @@ and you're done!
 ## Usage
 
 To use the Outline, you must add Features to your ForwardRenderer.
+
 ![Outline](https://github.com/ExpressoBits/StrixCartoon/wiki/images/Outline.png)
 
 To use Strix Toon simply use the shader on your material.
+
 ![StrixToon](https://github.com/ExpressoBits/StrixCartoon/wiki/images/StrixToon.png)
 
 ## Authors
