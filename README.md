@@ -27,10 +27,6 @@ Simply add a post processing profile as an asset, and when editing in the add ef
 NOTE:
 These shaders are a compilation of the best shaders for maximum URP compatibility with outline and lights with Toon Ramp, they are extremely based on the shaders of:
 
-👤 **ColinLeung-NiloCat**
-* Github: [@ColinLeung-NiloCat](https://github.com/ColinLeung-NiloCat)
-Light manager: https://github.com/ColinLeung-NiloCat/UnityURPToonLitShaderExample
-
 👤 **Alexander Ameye**
 * Github: [@AlexanderAmeye](https://github.com/AlexanderAmeye)
 Outline Rendering Feature: https://alexanderameye.github.io/outlineshader.html
