@@ -76,10 +76,6 @@ half3 ShadeSingleLightDefaultMethod(SurfaceData surfaceData, LightingData lighti
     // Lighting.hlsl -> https://github.com/Unity-Technologies/ScriptableRenderPipeline/blob/master/com.unity.render-pipelines.universal/ShaderLibrary/Lighting.hlsl
     lightAttenuation *= min(2,light.distanceAttenuation); //max intensity = 2, prevent over bright if light too close, can expose this float to editor if you wish to
 
-    // N dot L
-    // simplest 1 line cel shade, you can always replace this line by your own better method !
-    lightAttenuation *= smoothstep(_CelShadeMidPoint-_CelShadeSoftness,_CelShadeMidPoint+_CelShadeSoftness, NoL);
-
     // don't want direct lighting becomes too bright for toon lit characters? set this value to a lower value 
     lightAttenuation *= _DirectLightMultiplier;
 
@@ -113,12 +109,12 @@ half3 ShadeAllAdditionalLightsYourMethod(SurfaceData surfaceData, LightingData l
     lightAttenuation *= lerp(1,light.shadowAttenuation,_ReceiveShadowMappingAmount);
 
     lightAttenuation *= min(1,light.distanceAttenuation);
+
+    lightAttenuation *= _DirectLightMultiplier;
     
     //lightAttenuation *= Clamped(light.distanceAttenuation);
     // TODO clamped with ramped
     lightAttenuation = Ramped(lightAttenuation);
-
-    lightAttenuation *= _DirectLightMultiplier;
 
     half3 c = lightAttenuation * light.color * surfaceData.albedo;
     return min(half3(1,1,1),c);

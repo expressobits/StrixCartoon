@@ -44,9 +44,7 @@ Shader "URPToonLit"
         [Header(Lighting)]
         _IndirectLightConstColor("_IndirectLightConstColor", Color) = (0.5,0.5,0.5,1)
         _IndirectLightMultiplier("_IndirectLightMultiplier", Range(0,1)) = 1
-        _DirectLightMultiplier("_DirectLightMultiplier", Range(0,1)) = 0.25
-        _CelShadeMidPoint("_CelShadeMidPoint", Range(-1,1)) = -.5
-        _CelShadeSoftness("_CelShadeSoftness", Range(0,1)) = 0.05
+        _DirectLightMultiplier("_DirectLightMultiplier", Range(0,8)) = 1
 
         [Header(Shadow mapping)]
         _ReceiveShadowMappingAmount("_ReceiveShadowMappingAmount", Range(0,1)) = 0.5

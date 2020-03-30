@@ -84,8 +84,6 @@ CBUFFER_START(UnityPerMaterial)
     half3 _IndirectLightConstColor;
     half _IndirectLightMultiplier;
     half _DirectLightMultiplier;
-    half _CelShadeMidPoint;
-    half _CelShadeSoftness;
 
     // shadow mapping
     half _ReceiveShadowMappingAmount;
