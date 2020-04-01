@@ -1,7 +1,7 @@
 {
     "name": "br.com.expressobits.strixcartoon",
     "displayName": "Strix Cartoon",
-    "version": "0.0.2",
+    "version": "0.2.1",
     "unity": "2019.3",
     "description": "Cartoon shader",
     "keywords": [
