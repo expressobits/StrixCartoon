@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: StrixLux
+  m_Shader: {fileID: -6465566751694194690, guid: 6d30cf2fb8b86914a916cc4173d407d3,
+    type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _Albedo:
+        m_Texture: {fileID: 2800000, guid: ce2c9ac807d0d0e4eaebfcd304726bb5, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _CustomFunction_A26AC6EE_Ramp_7:
+        m_Texture: {fileID: 2800000, guid: 616d3d5040137714e92431ee79ff1ee5, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Emission:
+        m_Texture: {fileID: 2800000, guid: 1cf727c22e68a8e4d980573bb98fcf11, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - Boolean_DA1E5F94: 1
+    - Vector1_72F5B8A0: 1
+    - _EmissionMultiplier: 16
+    - _UseEmission: 1
+    m_Colors:
+    - _Albedo_Tiling: {r: 4, g: 4, b: 0, a: 0}

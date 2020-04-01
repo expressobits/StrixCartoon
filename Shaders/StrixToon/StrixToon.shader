@@ -121,6 +121,8 @@
             #include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Core.hlsl"
 
             #include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Lighting.hlsl"
+
+            #include "../../ShaderLibrary/Ramper.hlsl"
             
             #include "Packages/com.unity.render-pipelines.universal/Shaders/LitInput.hlsl"
 
@@ -155,18 +157,13 @@
             sampler _ToonRamp;
 
             
-half Ramped(half value)
-{
-    value = min(1,value);
-    value = tex2D(_ToonRamp,float2(value,0));
-    return value;
-}
+
 
 half3 MixFogColorD(real3 fragColor, real3 fogColor, real fogFactor)
 {
 #if defined(FOG_LINEAR) || defined(FOG_EXP) || defined(FOG_EXP2)
     real fogIntensity = ComputeFogIntensity(fogFactor);
-    fogIntensity = Ramped(fogIntensity);
+    fogIntensity = Ramped(fogIntensity,_ToonRamp);
     fragColor = lerp(fogColor, fragColor, fogIntensity);
 #endif
     return fragColor;
@@ -290,7 +287,7 @@ half3 MixFogD(real3 fragColor, real fogFactor)
                     Light light = GetAdditionalLight(i, positionWS);
 
                     // Mesmas funções usadas para proteger a luz principal.
-                    light.distanceAttenuation = Ramped(light.distanceAttenuation);
+                    light.distanceAttenuation = Ramped(light.distanceAttenuation,_ToonRamp);
                     color  += LightingPhysicallyBased(brdfData, light, normalWS, viewDirectionWS);
                 }
 #endif
@@ -301,7 +298,7 @@ half3 MixFogD(real3 fragColor, real fogFactor)
 
                 // Misture a cor do pixel com fogColor. Você pode opcionalmente usar o MixFogColor 
                 // para substituir o fogColor por um personalizado.
-                //fogFactor = Ramped(fogFactor);
+                //fogFactor = Ramped(fogFactor,_ToonRamp);
                 color = MixFogD(color, fogFactor);
                 return half4(color, surfaceData.alpha);
             }
