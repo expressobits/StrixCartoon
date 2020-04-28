@@ -80,7 +80,7 @@ public class OutlineFeature : ScriptableRendererFeature
     public override void Create()
     {
         outlinePass = new OutlinePass(settings.outlineMaterial);
-        outlinePass.renderPassEvent = RenderPassEvent.AfterRenderingTransparents;
+        outlinePass.renderPassEvent = RenderPassEvent.AfterRenderingOpaques;
         outlineTexture.Init("_OutlineTexture");
     }
 
